@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="Professional portfolio of Leenendra Suryawanshi, Manager Operation & Maintenance">
+<title>Leenendra Suryawanshi | Systems & IT Leader</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+:root{
+  --bg:#f6f8fb;--card:#fff;--text:#172033;--muted:#647084;--accent:#1d4ed8;
+  --line:#e4e9f0;--shadow:0 18px 45px rgba(23,32,51,.09);
+}
+body{background:var(--bg);color:var(--text);transition:background .3s,color .3s}
+header{position:sticky;top:0;z-index:100;backdrop-filter:blur(14px);background:rgba(255,255,255,.86);border-bottom:1px solid var(--line)}
+.theme-toggle{position:relative;z-index:200;border:1px solid var(--line);border-radius:50%;width:42px;height:42px;background:var(--card);color:var(--text);cursor:pointer;font-size:19px;box-shadow:0 8px 24px rgba(0,0,0,.08)}
+article,.stat,.career-path>div{transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease}
+article:hover,.career-path>div:hover{transform:translateY(-7px);box-shadow:var(--shadow)}
+.stat:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:30px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:25px 18px;text-align:center}
+.stat strong{display:block;font-size:2rem;letter-spacing:-.04em;color:var(--accent)}
+.stat span{display:block;margin-top:7px;color:var(--muted);font-size:.88rem}
+.career-path{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:28px}
+.career-path>div{position:relative;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+.career-path span{display:inline-flex;width:30px;height:30px;align-items:center;justify-content:center;border-radius:50%;background:var(--accent);color:#fff;font-size:.8rem;font-weight:700}
+.career-path h3{margin:15px 0 6px;font-size:1rem}
+.career-path p{margin:0;color:var(--muted);font-size:.88rem}
+.chips span{transition:transform .2s ease,background .2s ease}
+.chips span:hover{transform:translateY(-3px)}
+@media(max-width:900px){
+ .stats,.career-path{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:600px){
+ .stats,.career-path{grid-template-columns:1fr}
+ .theme-toggle{right:auto;top:auto}
+}
+body.dark-mode{--bg:#0b1120;--card:#121a2b;--text:#eef3ff;--muted:#aab5c8;--line:#25324a;--shadow:0 18px 45px rgba(0,0,0,.28)}
+body.dark-mode header{background:rgba(11,17,32,.88)}
+body.dark-mode .theme-toggle{background:var(--card);color:var(--text)}
+</style>
+
+<style>
+/* Leenendra Suryawanshi Profile visual refresh */
+:root{
+  --accent:#2563eb;
+  --accent2:#7c3aed;
+  --accent3:#06b6d4;
+  --card:#ffffff;
+  --bg:#f4f7fb;
+}
+body{background:linear-gradient(135deg,#f7f9fc 0%,#eef4ff 48%,#f8f5ff 100%)}
+.hero{background:radial-gradient(circle at 85% 20%,rgba(37,99,235,.18),transparent 32%),radial-gradient(circle at 15% 80%,rgba(124,58,237,.12),transparent 30%)}
+.projects-grid article{
+  position:relative;
+  overflow:hidden;
+  border:1px solid rgba(37,99,235,.14);
+  background:linear-gradient(145deg,#fff 0%,#f8fbff 100%);
+  box-shadow:0 12px 30px rgba(30,64,175,.08);
+}
+.projects-grid article::before{
+  content:"";
+  position:absolute;left:0;top:0;width:100%;height:4px;
+  background:linear-gradient(90deg,var(--accent),var(--accent2),var(--accent3));
+}
+.projects-grid article span{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:38px;height:38px;border-radius:12px;
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  color:#fff;font-weight:800;
+}
+.projects-grid article:hover{
+  border-color:rgba(37,99,235,.35);
+  transform:translateY(-9px);
+  box-shadow:0 22px 45px rgba(37,99,235,.15);
+}
+.stat{
+  background:linear-gradient(145deg,#fff,#f5f8ff);
+  border:1px solid rgba(37,99,235,.12);
+}
+.stat strong{
+  background:linear-gradient(90deg,var(--accent),var(--accent2));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.career-path>div{
+  background:linear-gradient(145deg,#fff,#f8f7ff);
+  border-left:4px solid var(--accent);
+}
+.career-path>div:nth-child(2){border-left-color:#7c3aed}
+.career-path>div:nth-child(3){border-left-color:#06b6d4}
+.career-path>div:nth-child(4){border-left-color:#10b981}
+.career-path>div:nth-child(5){border-left-color:#f59e0b}
+.career-path span{background:linear-gradient(135deg,var(--accent),var(--accent2))}
+.chips span{
+  background:linear-gradient(135deg,#eef4ff,#f3edff);
+  border:1px solid rgba(37,99,235,.14);
+  color:#24406d;
+}
+.section.dark{
+  background:linear-gradient(135deg,#0b1530 0%,#151238 55%,#071f2c 100%);
+}
+.section.dark .stat{
+  background:rgba(255,255,255,.07);
+  border-color:rgba(255,255,255,.12);
+  backdrop-filter:blur(10px);
+}
+.section.dark .stat span{color:#b9c6dc}
+@media(max-width:600px){
+  .projects-grid article{padding:22px}
+}
+body.dark-mode{
+  --card:#121b31;
+  --bg:#080e1c;
+  background:radial-gradient(circle at 80% 10%,rgba(37,99,235,.16),transparent 30%),#080e1c;
+}
+body.dark-mode .projects-grid article,
+body.dark-mode .stat,
+body.dark-mode .career-path>div{
+  background:linear-gradient(145deg,#121b31,#10172a);
+  border-color:rgba(120,160,255,.18);
+}
+body.dark-mode .chips span{color:#dbe7ff;background:rgba(37,99,235,.15)}
+</style>
+
+<style>
+/* Default executive dark theme */
+body{background:radial-gradient(circle at 82% 8%,rgba(37,99,235,.16),transparent 30%),radial-gradient(circle at 12% 82%,rgba(124,58,237,.12),transparent 28%),#080e1c;color:#eef3ff}
+header{background:rgba(8,14,28,.88)!important;border-bottom-color:#25324a!important}
+</style>
+
+<style>
+header{display:flex;align-items:center;gap:18px}
+header nav{flex:1}
+.theme-toggle{flex:0 0 auto;margin-left:auto}
+@media(max-width:900px){
+  header{gap:10px}
+  .theme-toggle{width:40px;height:40px}
+}
+</style>
+
+<style>
+.btn{position:relative;z-index:2}
+.btn.ghost{border:1px solid currentColor}
+</style>
+
+<style>
+:root{--bg:#070b14;--bg2:#0b1220;--card:#101a2b;--text:#f4f7ff;--muted:#a8b4c8;--line:rgba(148,163,184,.16);--accent:#4f8cff;--accent2:#8b5cf6;--accent3:#22d3ee}
+html{scroll-behavior:smooth}
+body{background:radial-gradient(circle at 85% 5%,rgba(79,140,255,.16),transparent 28%),radial-gradient(circle at 8% 42%,rgba(139,92,246,.10),transparent 25%),linear-gradient(135deg,var(--bg),var(--bg2));color:var(--text)}
+header{background:rgba(7,11,20,.84)!important;border-bottom:1px solid var(--line)!important;backdrop-filter:blur(18px)}
+nav a{color:#dce6f8}nav a:hover{color:#7eb0ff}
+.hero{position:relative;overflow:hidden;background:radial-gradient(circle at 75% 30%,rgba(34,211,238,.10),transparent 25%),radial-gradient(circle at 25% 80%,rgba(79,140,255,.12),transparent 28%)}
+.hero-panel{background:linear-gradient(145deg,rgba(17,28,47,.96),rgba(9,17,30,.96))!important;border:1px solid rgba(126,166,255,.20)!important;box-shadow:0 25px 70px rgba(0,0,0,.35)!important}
+.btn{box-shadow:0 10px 25px rgba(0,0,0,.20);transition:transform .25s ease,box-shadow .25s ease}.btn:hover{transform:translateY(-3px);box-shadow:0 15px 35px rgba(79,140,255,.22)}.btn.ghost{border-color:rgba(126,166,255,.35)}
+.section{background:transparent!important}.section.dark{background:linear-gradient(135deg,#080e1b,#10152a,#071923)!important}
+.projects-grid article,.stat,.career-path>div{background:linear-gradient(145deg,rgba(17,27,45,.98),rgba(11,19,33,.98))!important;border:1px solid rgba(126,166,255,.15)!important;box-shadow:0 15px 40px rgba(0,0,0,.20)!important}
+.projects-grid article:hover,.career-path>div:hover,.stat:hover{border-color:rgba(79,140,255,.45)!important;box-shadow:0 22px 55px rgba(0,0,0,.34),0 0 25px rgba(79,140,255,.08)!important}
+.projects-grid article::before{background:linear-gradient(90deg,var(--accent),var(--accent2),var(--accent3))!important}
+.projects-grid article span{background:linear-gradient(135deg,var(--accent),var(--accent2))!important}
+.stat strong{background:linear-gradient(90deg,#6ea4ff,#a78bfa,#67e8f9)!important;-webkit-background-clip:text!important;background-clip:text!important;color:transparent!important}
+.stat span,.career-path p{color:var(--muted)!important}
+.career-path>div{border-left-color:var(--accent)!important}
+.chips span{background:rgba(79,140,255,.09)!important;border:1px solid rgba(126,166,255,.18)!important;color:#dbe7ff!important}
+footer{background:#050911!important;border-top:1px solid var(--line)}
+</style>
+
+<style>
+/* Navigation alignment */
+header nav{display:flex;align-items:center;justify-content:flex-end;gap:22px;flex-wrap:wrap}
+header nav a{white-space:nowrap}
+@media(max-width:900px){header nav{gap:12px}}
+@media(max-width:600px){header nav{justify-content:center;gap:10px}}
+</style>
+
+<style>
+.btn.profile-download{background:linear-gradient(135deg,#4f8cff,#8b5cf6);color:#fff!important;border:0}
+</style>
+
+<style>
+.endorsement-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:26px;margin-top:30px}
+.endorsement-summary,.endorsement-form,.endorsement-card{
+  background:linear-gradient(145deg,rgba(17,27,45,.98),rgba(11,19,33,.98));
+  border:1px solid rgba(126,166,255,.15);border-radius:20px;
+  box-shadow:0 15px 40px rgba(0,0,0,.20)
+}
+.endorsement-summary{padding:28px;text-align:center}
+.rating-score strong{font-size:3.3rem;color:#f4f7ff}
+.rating-score span{color:#a8b4c8}
+.stars{font-size:1.35rem;letter-spacing:4px;color:#f5b942;margin:7px 0}
+.rating-bars{margin-top:20px;text-align:left}
+.rating-bar{display:grid;grid-template-columns:20px 1fr 30px;gap:9px;align-items:center;margin:8px 0;color:#a8b4c8;font-size:.82rem}
+.rating-track{height:7px;border-radius:99px;background:#1d293d;overflow:hidden}
+.rating-fill{height:100%;border-radius:99px;background:linear-gradient(90deg,#4f8cff,#8b5cf6)}
+.endorsement-form{padding:26px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.endorsement-form label{display:block;color:#dbe7ff;font-size:.88rem;margin-bottom:15px}
+.endorsement-form input,.endorsement-form textarea,.endorsement-form select{
+  width:100%;margin-top:7px;padding:12px 13px;border-radius:10px;
+  border:1px solid rgba(126,166,255,.2);background:#0b1424;color:#eef3ff;
+  font:inherit;box-sizing:border-box
+}
+.endorsement-form textarea{resize:vertical}
+.endorsement-form option{background:#0b1424;color:#fff}
+.form-note{font-size:.76rem;color:#8998ae;margin-top:10px}
+.endorsement-list{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:24px}
+.endorsement-card{padding:20px}
+.endorsement-card-top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+.endorsement-card h3{margin:0;font-size:1rem}
+.endorsement-meta{font-size:.76rem;color:#8291a7;margin-top:4px}
+.endorsement-card .stars{font-size:1rem;letter-spacing:2px;margin:0}
+.endorsement-comment{color:#c5d0e1;line-height:1.6;margin:14px 0 0;font-size:.9rem}
+.empty-endorsements{grid-column:1/-1;padding:25px;text-align:center;color:#8796ad;border:1px dashed rgba(126,166,255,.18);border-radius:16px}
+@media(max-width:800px){.endorsement-layout,.endorsement-list{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}}
+</style>
+
+<style id="attached-index-mobile-fix">
+/* =========================================================
+   MOBILE RESPONSIVE UPDATE — applied to the attached index
+   Keeps all existing content, Supabase logic and desktop design.
+   ========================================================= */
+html,body{width:100%;max-width:100%;overflow-x:hidden}
+body{min-width:0}
+img,svg,video,canvas{max-width:100%;height:auto}
+*,*::before,*::after{box-sizing:border-box}
+
+@media (max-width: 900px){
+  .wrap{width:100%;max-width:100%;padding-left:22px;padding-right:22px}
+
+  /* Header / mobile navigation */
+  header{position:sticky!important;top:0!important;width:100%;padding:10px 0!important;z-index:1000}
+  header .navin{display:flex!important;align-items:center!important;gap:10px!important;position:relative}
+  .logo{font-size:1.05rem!important;white-space:nowrap!important}
+  .menu{display:flex!important;align-items:center;justify-content:center;width:42px;height:42px;flex:0 0 42px;margin-left:auto;border:1px solid rgba(126,166,255,.25);border-radius:12px;background:rgba(17,27,45,.9);color:#eef3ff;font-size:20px;cursor:pointer}
+  header nav{display:none!important;position:absolute!important;left:14px!important;right:14px!important;top:58px!important;flex-direction:column!important;align-items:stretch!important;justify-content:flex-start!important;gap:3px!important;padding:10px!important;border:1px solid rgba(126,166,255,.18)!important;border-radius:16px!important;background:rgba(7,12,23,.98)!important;box-shadow:0 22px 50px rgba(0,0,0,.45)!important;backdrop-filter:blur(18px)!important;max-height:calc(100vh - 75px);overflow-y:auto!important}
+  header nav.open{display:flex!important}
+  header nav a{display:block!important;width:100%!important;padding:11px 12px!important;border-radius:10px!important;white-space:normal!important;font-size:.9rem!important;line-height:1.2!important}
+  header nav a:hover{background:rgba(79,140,255,.10)!important}
+
+  /* Hero */
+  .hero{width:100%;overflow:hidden}
+  .hero-grid{grid-template-columns:1fr!important;gap:26px!important}
+  .hero h1{font-size:clamp(2.7rem,12vw,4.8rem)!important;line-height:.98!important;overflow-wrap:anywhere}
+  .hero .lead{max-width:100%!important;font-size:1rem!important;line-height:1.7!important}
+  .buttons{display:grid!important;grid-template-columns:1fr!important;gap:10px!important;width:100%!important}
+  .buttons .btn{width:100%!important;min-height:46px!important;display:flex!important;align-items:center!important;justify-content:center!important;text-align:center!important}
+  .metrics{display:grid!important;grid-template-columns:repeat(3,1fr)!important;gap:8px!important;width:100%!important}
+  .metrics>div{min-width:0!important;padding:12px 6px!important}
+  .metrics b{font-size:1.25rem!important}
+  .metrics span{font-size:.7rem!important;line-height:1.25!important}
+  .hero-panel{width:100%!important;max-width:100%!important;padding:20px!important;overflow:hidden!important}
+
+  /* Section headings */
+  .section,.contact{width:100%;overflow:hidden}
+  .section h2,.contact h2{font-size:clamp(1.75rem,8vw,2.7rem)!important;line-height:1.12!important}
+  .section-intro{font-size:.94rem!important;line-height:1.65!important;max-width:100%!important}
+  .eyebrow{font-size:.68rem!important;letter-spacing:.12em!important}
+
+  /* About / contact */
+  .split,.contact-grid{grid-template-columns:1fr!important;gap:24px!important}
+  .split>*,.contact-grid>*{min-width:0!important;width:100%!important}
+  .contact-card{width:100%!important;overflow:hidden!important}
+  .contact-card a,.contact-card span{overflow-wrap:anywhere!important}
+
+  /* Generic cards / grids */
+  .grid,.projects-grid{grid-template-columns:1fr!important;gap:15px!important}
+  .grid>*,.projects-grid article{min-width:0!important;width:100%!important}
+  .projects-grid article{padding:20px!important}
+  .projects-grid article h3{font-size:1.05rem!important;line-height:1.3!important}
+  .projects-grid article p,.projects-grid article li{font-size:.9rem!important;line-height:1.6!important}
+  .chips{display:flex!important;flex-wrap:wrap!important;gap:7px!important}
+  .chips span{font-size:.74rem!important;padding:6px 9px!important;max-width:100%!important}
+
+  /* Stats / leadership */
+  .stats{grid-template-columns:repeat(2,1fr)!important;gap:12px!important}
+  .stat{padding:20px 12px!important;min-width:0!important}
+  .stat strong{font-size:1.65rem!important}
+  .stat span{font-size:.78rem!important;line-height:1.35!important}
+
+  /* Career timeline */
+  .career-path{grid-template-columns:1fr!important;gap:13px!important}
+  .career-path>div{min-width:0!important;padding:19px!important}
+  .career-path h3{font-size:1rem!important}
+  .career-path p{font-size:.84rem!important;line-height:1.55!important}
+
+  /* Experience timeline */
+  .timeline{width:100%!important}
+  .job{grid-template-columns:1fr!important;gap:8px!important;padding:22px 0!important}
+  .job .date{font-size:.7rem!important;letter-spacing:.08em!important}
+  .job h3{font-size:1.05rem!important;line-height:1.35!important}
+  .job h4{font-size:.86rem!important}
+  .job ul{padding-left:19px!important}
+  .job li{font-size:.88rem!important;line-height:1.6!important}
+
+  /* Education / certifications */
+  .edu,.certs{grid-template-columns:1fr!important;gap:14px!important}
+  .edu>*,.certs>*{min-width:0!important;width:100%!important}
+
+  /* Endorsements */
+  .endorsement-layout{grid-template-columns:1fr!important;gap:16px!important}
+  .endorsement-summary,.endorsement-form{padding:20px!important;width:100%!important;min-width:0!important}
+  .rating-score strong{font-size:2.9rem!important}
+  .rating-bars{width:100%!important}
+  .rating-bar{grid-template-columns:18px minmax(0,1fr) 28px!important}
+  .form-row{grid-template-columns:1fr!important;gap:0!important}
+  .endorsement-form input,.endorsement-form select,.endorsement-form textarea{width:100%!important;min-width:0!important}
+  .endorsement-form button{width:100%!important;min-height:46px!important}
+  .endorsement-list{grid-template-columns:1fr!important;gap:12px!important}
+  .endorsement-card{width:100%!important;min-width:0!important;padding:17px!important;overflow:hidden!important}
+  .endorsement-card-top{flex-direction:column!important;align-items:flex-start!important}
+  .endorsement-card .stars{font-size:.95rem!important}
+  .endorsement-comment{font-size:.88rem!important;overflow-wrap:anywhere!important}
+
+  /* Footer */
+  footer .wrap{display:flex!important;flex-direction:column!important;gap:8px!important;text-align:center!important;padding-top:24px!important;padding-bottom:24px!important}
+}
+
+@media (max-width: 520px){
+  .wrap{padding-left:15px;padding-right:15px}
+  header .navin{padding-left:15px!important;padding-right:15px!important}
+  .logo{font-size:.98rem!important}
+  .hero{padding-top:42px!important;padding-bottom:38px!important}
+  .hero h1{font-size:2.65rem!important}
+  .hero .lead{font-size:.92rem!important}
+  .metrics{grid-template-columns:1fr!important;gap:7px!important}
+  .metrics>div{display:flex!important;align-items:center!important;justify-content:space-between!important;text-align:left!important;padding:10px 13px!important}
+  .stats{grid-template-columns:1fr!important}
+  .stat{display:flex!important;align-items:center!important;justify-content:space-between!important;text-align:left!important;gap:12px!important}
+  .stat strong{font-size:1.55rem!important;flex:0 0 auto}
+  .stat span{margin-top:0!important;text-align:right!important}
+  .rating-score strong{font-size:2.6rem!important}
+  .stars{font-size:1.15rem!important}
+}
+
+@media (min-width: 901px){
+  .menu{display:none!important}
+}
+</style>
+
+</head>
+<body>
+<header class="nav"><div class="wrap navin"><a class="logo" href="#home">Leenendra Profile<span>.</span></a><button class="menu">☰</button>
+<nav><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#achievements">Achievements</a><a href="#career-path">Career</a><a href="#commercial-leadership">Leadership</a><a href="#expertise">Expertise</a><a href="#education">Education</a><a href="#certifications">Certifications</a><a href="#endorsements">Endorsements</a><a href="#contact">Contact</a></nav></div></header>
+
+<section id="home" class="hero"><div class="wrap hero-grid">
+<div><p class="eyebrow">SYSTEMS & IT • ITS • PROJECT DELIVERY</p>
+<h1>Leenendra<br><em>Suryawanshi</em></h1>
+<p class="lead">Technology & Project Management Leader with 10 years of experience across IT and Intelligent Transport Systems, project management, solution design, implementation, operations and maintenance.</p>
+<div class="buttons">
+<a class="btn" href="#experience">Explore Experience</a>
+<a class="btn ghost" href="Leenendra-Resume.pdf" download onclick="return verifyCVPassword(event, this)">Download CV</a>
+<a class="btn ghost" href="https://www.linkedin.com/in/leenendra-suryawanshi-95b15a162/" target="_blank" rel="noopener">LinkedIn</a> 
+
+<a class="btn ghost" href="#contact">Connect</a>
+</div>
+<div class="metrics"><div><b>10</b><span>Years Experience</span></div><div><b>ITS</b><span>Core Domain</span></div><div><b>Manager ITS</b><span>Systems & IT</span></div></div>
+</div>
+<div class="hero-panel">
+<div class="panel-top">PROFILE</div>
+<img src="LeenendraPic.png" alt="Leenendra Suryawanshi" style="width:180px;height:180px;object-fit:cover;border-radius:50%;display:block;margin:0 auto 22px;border:4px solid rgba(255,255,255,0.18);">
+<h2>Manager Operation & Maintenance</h2>
+<p>Devaditya Technocrats LLP</p>
+<div class="line"></div>
+<ul><li>Enterprise IT Infrastructure</li><li>Toll Management Systems</li><li>ATMS / TCMS / ITMS</li><li>Cybersecurity & Compliance</li><li>Digital Transformation</li></ul>
+</div>
+</div></section>
+
+<section id="about" class="section"><div class="wrap split"><div><p class="eyebrow">PROFILE</p><h2>Bridging technology, infrastructure and project delivery.</h2></div>
+<div class="copy"><p>Leenendra Suryawanshi is an Manager Operation & Maintenance with 10 years of experience combining IT and ITS technologies. His experience covers project management, project delivery, solution design, implementation, operations and maintenance of IT infrastructure, Toll Automation, ATMS, IoT and ITMS systems.</p>
+<p>His profile includes enterprise IT infrastructure, system availability and business continuity, software deployment and support, IT governance, vendor management, cybersecurity, digital transformation, automation and technology evaluation.</p><p>He has managed and supported technology environments involving Electronic Toll Collection, highway management and Advanced Traffic Management Systems in India.</p></div></div></section>
+
+<section id="experience" class="section dark"><div class="wrap"><p class="eyebrow">CAREER</p><h2>Professional experience</h2>
+<div class="timeline">
+<div class="job"><div class="date">JAN 2026 — PRESENT</div><div><h3>Manager Operation & Maintenance</h3><h4>Devaditya Technocrats LLP</h4><ul>
+<li>Leads end-to-end project management and delivery of technology initiatives from planning and solution design through implementation, testing, commissioning and operational handover.</li>
+<li>Provides technology leadership for <strong>ATMS, MLFF and TCMS</strong> projects, driving system integration, deployment, testing and operational readiness.</li>
+<li>Leads cross-functional technical teams and coordinates with clients, vendors, system integrators and project stakeholders to ensure timely project delivery.</li>
+<li>Oversees project scope, schedules, risks, technical dependencies, quality, documentation and stakeholder communication.</li>
+<li>Directs application development, deployment, integration and support activities across project and business environments.</li>
+<li>Leads IT infrastructure planning covering servers, networks, storage, security, availability and business continuity.</li>
+<li>Drives digital transformation, automation, process improvement and technology modernization initiatives.</li>
+<li>Provides strategic technology recommendations to senior management and supports technology evaluation and solution decisions.</li>
+<li>Oversees cybersecurity, vulnerability management, risk assessment and compliance requirements across technology environments.</li>
+</ul></div></div>
+<div class="job"><div class="date">NOV 2024 — NOV 2025</div><div><h3>Associate Manager – Technical Support</h3><h4>Pro-vigil</h4><ul><li>Supervised and mentored a team of 20 technical support representatives.</li><li>Managed team schedules, workloads, performance metrics, training and hiring.</li><li>Resolved escalated customer issues and complex technical problems.</li><li>Collaborated with engineering and product teams to resolve product defects.</li><li>Led process improvement, knowledge management and service-level initiatives.</li></ul></div></div>
+<div class="job"><div class="date">AUG 2018 — NOV 2024</div><div><h3>System Engineer → Sr. System Engineer → Asst. Manager – Systems → Deputy Manager – Systems</h3><h4>Safeway Concessions</h4><ul><li>Maintained ATMS and TMS systems in accordance with the NHAI concession agreement.</li><li>Managed multiple projects, vendors, contracts, payments, maintenance planning and end-to-end project execution.</li><li>Led ATMS and TCMS implementation, FAT, WIR and SAT activities.</li><li>Worked with PTZ, fixed cameras, ECB, VMS, VIDS, VASD and MET systems.</li><li>Managed IT policy implementation, system downtime, AMC/DLP obligations and technology improvement recommendations.</li><li>Coordinated with Independent Engineers, NHAI and system suppliers on technical requirements and correspondence.</li></ul></div></div>
+<div class="job"><div class="date">EARLIER EXPERIENCE</div><div><h3>IT Technician</h3><h4>Feedback Brisa OMT Ltd., Kadapa</h4><ul><li>Supported TMS operations, ETC reconciliation, toll server/database administration and file-transfer monitoring.</li><li>Managed toll system installation, commissioning, testing and SAT.</li><li>Supported CCTV, network deployment, equipment troubleshooting and preventive maintenance.</li><li>Worked with ETC/RFID, AVC sensors, boom barriers, SSWIM, MSWIM and static weigh bridges.</li></ul><h3 class="sub">IT Executive</h3><h4>GKC Projects Ltd., Gangawathi</h4><ul><li>Handled preventive/corrective maintenance, IT components, SLA uptime, network security and desktop/server administration.</li></ul></div></div>
+</div></div></section>
+
+<section id="expertise" class="section"><div class="wrap"><p class="eyebrow">EXPERTISE</p><h2>Technology & management capabilities</h2>
+<div class="grid">
+<article><span>01</span><h3>ITS & Tolling</h3><p>ATMS, TCMS, ITMS, Toll Automation, Electronic Toll Collection and highway technology systems.</p></article>
+<article><span>02</span><h3>Project Management</h3><p>Project planning, execution, implementation, FAT/WIR/SAT, operations, maintenance and delivery.</p></article>
+<article><span>03</span><h3>IT Infrastructure</h3><p>Servers, networks, storage, software deployment, system administration, backups and business continuity.</p></article>
+<article><span>04</span><h3>Leadership</h3><p>Cross-functional team leadership, vendor management, SLA/KPI monitoring and stakeholder coordination.</p></article>
+<article><span>05</span><h3>Security & Compliance</h3><p>Cybersecurity strategy, vulnerability management, risk assessment, IT policy and compliance controls.</p></article>
+<article><span>06</span><h3>Digital Transformation</h3><p>Automation, process improvement, cloud migration, virtualization and infrastructure modernization.</p></article>
+</div>
+<div class="chips"><span>ATMS</span><span>MLFF</span><span>TCMS</span><span>ITMS</span><span>IT Infrastructure</span><span>IoT</span><span>ITSM</span><span>O365</span><span>D365</span><span>ANPR / CCTV</span><span>RFID / ETC</span><span>Vendor Management</span><span>IT Security</span></div>
+</div></section>
+
+<section id="projects" class="section">
+<div class="wrap">
+<p class="eyebrow">FEATURED PROJECTS</p>
+<h2>Technology Leadership & Project Management</h2>
+<p class="section-intro">End-to-end technology leadership across Intelligent Transport Systems, tolling and enterprise technology projects.</p>
+<div class="grid projects-grid">
+<article><span>01</span><h3>MLFF — Multi-Lane Free Flow</h3><p>Technology leadership and end-to-end project management for MLFF initiatives, covering solution planning, system integration, deployment, testing, commissioning, operational readiness and stakeholder coordination.</p></article>
+<article><span>02</span><h3>ATMS — Advanced Traffic Management Systems</h3><p>Leads ATMS technology delivery covering system integration, field technology, deployment, testing, commissioning, operations readiness and coordination with clients, vendors and project stakeholders.</p></article>
+<article><span>03</span><h3>TCMS — Toll Collection Management System</h3><p>Leadership of TCMS implementation and delivery, including lane and central application integration, device integration, testing, commissioning, operational readiness and production support.</p></article>
+<article><span>04</span><h3>End-to-End Project Leadership</h3><p>Leads projects from requirement analysis and solution planning through execution, integration, FAT, testing, commissioning, SAT, handover and operational support, with ownership of scope, schedule, risks and quality.</p></article>
+<article><span>05</span><h3>System Integration & Technology Delivery</h3><p>Coordinates cross-functional technical teams, system integrators, vendors and clients to manage technical dependencies, interfaces, deployment activities, issue resolution and successful project delivery.</p></article>
+<article><span>06</span><h3>Stakeholder & Vendor Leadership</h3><p>Drives technical discussions, project reviews, vendor coordination, stakeholder communication and resolution of implementation challenges to maintain delivery timelines and project objectives.</p></article>
+<article><span>07</span><h3>Testing, Commissioning & Operational Readiness</h3><p>Provides leadership across integration testing, FAT/WIR/SAT, lane-level validation, central application readiness, commissioning, defect closure and transition to operations.</p></article>
+<article><span>08</span><h3>Technology Strategy & Digital Transformation</h3><p>Provides technology recommendations to senior management and drives automation, process improvement, infrastructure modernization, cybersecurity and technology evaluation initiatives.</p></article>
+</div>
+</div>
+</section>
+
+<section id="achievements" class="section dark">
+<div class="wrap">
+<p class="eyebrow">KEY ACHIEVEMENTS</p>
+<h2>Leadership at a Glance</h2>
+<p class="section-intro">A concise view of the leadership experience and delivery focus reflected in the professional profile.</p>
+<div class="stats">
+<div class="stat"><strong>10+</strong><span>Years of IT & ITS Experience</span></div>
+<div class="stat"><strong>35+</strong><span>Technical Support Team Members Led</span></div>
+<div class="stat"><strong>15+</strong><span>Toll Plazas Maintained</span></div>
+<div class="stat"><strong>7+</strong><span>End-to-End Projects Executed</span></div>
+<div class="stat"><strong>6+</strong><span>ATMS Projects — End-to-End PM & Execution</span></div>
+</div>
+</div>
+</section>
+
+<section id="commercial-leadership" class="section">
+<div class="wrap">
+<p class="eyebrow">COMMERCIAL & SOLUTION LEADERSHIP</p>
+<h2>From RFP to Execution</h2>
+<p class="section-intro">Hands-on leadership across the complete technology project lifecycle, from opportunity evaluation and solutioning through commercial planning and execution.</p>
+<div class="grid projects-grid">
+<article><span>01</span><h3>RFP & Tender Management</h3><p>Leads technical participation in RFPs and tenders, including requirement analysis, compliance mapping, technical responses, solution inputs and bid strategy.</p></article>
+<article><span>02</span><h3>Solutioning & Architecture</h3><p>Develops practical technology solutions aligned to project requirements, operational needs, system integration and implementation constraints.</p></article>
+<article><span>03</span><h3>Costing & BOQ</h3><p>Drives project costing, estimation, Bill of Quantities preparation, technology and infrastructure sizing, and techno-commercial inputs.</p></article>
+<article><span>04</span><h3>Contracts & Commercial Coordination</h3><p>Supports contract scope definition, commercial coordination, vendor discussions, deliverables and execution requirements.</p></article>
+<article><span>05</span><h3>End-to-End Project Management</h3><p>Owns delivery from planning and mobilization through procurement, integration, testing, commissioning, handover and operational support.</p></article>
+</div>
+</div>
+</section>
+
+<section id="career-path" class="section">
+<div class="wrap">
+<p class="eyebrow">CAREER PROGRESSION</p>
+<h2>Career Timeline</h2>
+<div class="career-path">
+<div><span>01</span><h3>IT Technician</h3><p>Feedback Brisa OMT Ltd.</p></div>
+<div><span>02</span><h3>IT Executive</h3><p>GKC Projects Ltd.</p></div>
+<div><span>03</span><h3>System Engineer → Deputy Manager</h3><p>Safeway Concessions</p></div>
+<div><span>04</span><h3>Associate Manager – Technical Support</h3><p>Pro-vigil</p></div>
+<div><span>05</span><h3>Manager Operation & Maintenance</h3><p>Devaditya Technocrats LLP</p></div>
+</div>
+</div>
+</section>
+
+<section id="education" class="section dark"><div class="wrap"><p class="eyebrow">EDUCATION</p><h2>Academic background</h2><div class="edu">
+<div><b>2026</b><h3>Master of Computer Applications (MCA)</h3><p>Andhra University — Online</p></div>
+<div><b>—</b><h3>B.Com</h3><p>GITAM Deemed University</p></div>
+<div><b>—</b><h3>Diploma in Computer Management & Engineering</h3><p>Swarnandhra Institute of Engineering & Technology</p></div>
+<div><b>—</b><h3>Intermediate – MPC</h3><p>TN Board of Secondary Education</p></div>
+</div></div></section>
+
+<section id="certifications" class="section"><div class="wrap"><p class="eyebrow">CERTIFICATIONS</p><h2>Continuous learning</h2><div class="certs">
+<div>Certified in Cybersecurity (CC)<small>ISC2</small></div><div>Certified Associate CISO<small>CDAC & CERT-In</small></div><div>ITIL V4 Foundation<small>Simplilearn</small></div><div>Linux 7 & 8<small>I Gurkul</small></div><div>Project Management<small>LinkedIn</small></div><div>Cisco Packet Tracer<small>Cisco</small></div><div>Career Edge – Soft & Hard Skills<small>TCS</small></div>
+</div></div></section>
+
+
+<section id="endorsements" class="section dark">
+  <div class="wrap">
+    <p class="eyebrow">PROFESSIONAL ENDORSEMENTS</p>
+    <h2>Rate the Endorsement</h2>
+    <p class="section-intro">Share a professional rating and a short comment about Leenendra's project leadership, technology delivery or collaboration.</p>
+
+    <div class="endorsement-layout">
+      <div class="endorsement-summary">
+        <div class="rating-score"><strong id="avgRating">0.0</strong><span>/ 5</span></div>
+        <div class="stars" id="summaryStars" aria-label="Average rating">★★★★★</div>
+        <p><strong id="ratingCount">0</strong> professional ratings</p>
+        <div class="rating-bars" id="ratingBars"></div>
+      </div>
+
+      <form class="endorsement-form" id="endorsementForm">
+        <div class="form-row">
+          <label>Rate an area
+            <select id="endorsementArea" required>
+              <option value="">Select area</option>
+              <option>End-to-End Project Management</option>
+              <option>ATMS / ITS Delivery</option>
+              <option>MLFF / TCMS Technology</option>
+              <option>RFP, Solutioning & BOQ</option>
+              <option>Leadership & Stakeholder Management</option>
+            </select>
+          </label>
+          <label>Your rating
+            <select id="endorsementRating" required>
+              <option value="">Rating</option>
+              <option value="5">★★★★★ — Excellent</option>
+              <option value="4">★★★★☆ — Very Good</option>
+              <option value="3">★★★☆☆ — Good</option>
+              <option value="2">★★☆☆☆ — Fair</option>
+              <option value="1">★☆☆☆☆ — Needs Improvement</option>
+            </select>
+          </label>
+        </div>
+        <label>Your name
+          <input id="endorserName" type="text" maxlength="70" placeholder="Your name" required>
+        </label>
+        <label>Comment
+          <textarea id="endorserComment" maxlength="400" rows="4" placeholder="Write a short professional comment..." required></textarea>
+        </label>
+        <button class="btn primary" type="submit">Submit Endorsement</button>
+        <p class="form-note">Please keep comments professional and relevant to your working experience. Submitted endorsements are published live.</p>
+      </form>
+    </div>
+
+    <div class="endorsement-list" id="endorsementList">
+      <div class="empty-endorsements">No endorsements yet. Be the first to share a professional rating.</div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact"><div class="wrap contact-grid"><div><p class="eyebrow">CONTACT</p><h2>Let's connect.</h2><p>For professional opportunities, technology projects and collaboration.</p></div><div class="contact-card"><div><small>EMAIL</small><a href="mailto:Leenendrasuryawanshi@gmail.com">Leenendrasuryawanshi@gmail.com</a></div><div><small>PHONE</small><a href="tel:+917893804420">+91 8006677575, +91 8770547298</a></div><div><small>LOCATION</small><span>India</span></div></div></div></section>
+<footer><div class="wrap"><span>© 2026 Leenendra Suryawanshi</span><span>Systems & IT • ITS • Project Delivery</span></div></footer>
+<script>const b=document.querySelector('.menu'),n=document.querySelector('nav');b.onclick=()=>n.classList.toggle('open');</script>
+
+
+<script>
+function verifyCVPassword(event, link){
+  event.preventDefault();
+  const password = prompt("Enter the CV/Profile download password:");
+  if(password === "VSK2026"){
+    const a=document.createElement("a");
+    a.href=link.href; a.download=""; document.body.appendChild(a); a.click(); a.remove();
+  } else if(password !== null){
+    alert("Incorrect password.");
+  }
+  return false;
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+(function(){
+  /*
+   * LIVE SHARED ENDORSEMENTS
+   * Replace the two placeholders below with your Supabase project values.
+   * Never put a Supabase service-role/secret key here.
+   */
+  const SUPABASE_URL = 'https://uovlojoruumnsklappvc.supabase.co';
+  const SUPABASE_ANON_KEY = 'sb_publishable_cn-4gWfORpGPwSnkEkBi1A_lKmcr8o2';
+
+  const form=document.getElementById('endorsementForm');
+  const list=document.getElementById('endorsementList');
+  if(!form||!list)return;
+
+  const ready = SUPABASE_URL.startsWith('https://') &&
+                !SUPABASE_URL.includes('YOUR_') &&
+                !SUPABASE_ANON_KEY.includes('YOUR_');
+
+  if(!ready){
+    list.innerHTML='<div class="empty-endorsements">Live endorsements are ready. Add your Supabase Project URL and publishable key in this file to connect the public database.</div>';
+    return;
+  }
+
+  const client = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+  function esc(s){
+    return String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
+  }
+  function stars(n){return '★'.repeat(n)+'☆'.repeat(5-n)}
+
+  async function render(){
+    const {data,error}=await client
+      .from('endorsements')
+      .select('id,name,area,rating,comment')
+      .order('id',{ascending:false});
+
+    if(error){
+      list.innerHTML='<div class="empty-endorsements">Unable to load endorsements right now. Please try again later.</div>';
+      return;
+    }
+
+    const rows=data||[];
+    const count=rows.length;
+    const avg=count?rows.reduce((a,x)=>a+Number(x.rating),0)/count:0;
+
+    document.getElementById('ratingCount').textContent=count;
+    document.getElementById('avgRating').textContent=avg.toFixed(1);
+    document.getElementById('summaryStars').textContent=stars(Math.round(avg));
+
+    const bars=document.getElementById('ratingBars');
+    bars.innerHTML='';
+    for(let r=5;r>=1;r--){
+      const n=rows.filter(x=>Number(x.rating)===r).length;
+      const pct=count?Math.round(n/count*100):0;
+      bars.innerHTML+=`<div class="rating-bar"><span>${r}</span><div class="rating-track"><div class="rating-fill" style="width:${pct}%"></div></div><span>${n}</span></div>`;
+    }
+
+    if(!count){
+      list.innerHTML='<div class="empty-endorsements">No endorsements yet. Be the first to share a professional rating.</div>';
+      return;
+    }
+
+    list.innerHTML=rows.map(x=>{
+      const date='';
+      return `<article class="endorsement-card">
+        <div class="endorsement-card-top">
+          <div><h3>${esc(x.name)}</h3><div class="endorsement-meta">${esc(x.area)}</div></div>
+          <div class="stars">${stars(Number(x.rating))}</div>
+        </div>
+        <p class="endorsement-comment">${esc(x.comment)}</p>
+      </article>`;
+    }).join('');
+  }
+
+  form.addEventListener('submit',async function(e){
+    e.preventDefault();
+
+    const button=form.querySelector('button[type="submit"]');
+    const original=button.textContent;
+    button.disabled=true;
+    button.textContent='Submitting...';
+
+    const entry={
+      name:document.getElementById('endorserName').value.trim(),
+      area:document.getElementById('endorsementArea').value,
+      rating:Number(document.getElementById('endorsementRating').value),
+      comment:document.getElementById('endorserComment').value.trim()
+    };
+
+    if(!entry.name||!entry.area||!entry.rating||!entry.comment){
+      button.disabled=false;
+      button.textContent=original;
+      return;
+    }
+
+    const {error}=await client.from('endorsements').insert(entry);
+
+    if(error){
+      console.error('Supabase endorsement insert error:', error);
+      alert('Your endorsement could not be submitted.\n\nSupabase: ' + (error.message || 'Unknown database error'));
+    }else{
+      form.reset();
+      await render();
+      document.getElementById('endorsementList').scrollIntoView({behavior:'smooth',block:'start'});
+    }
+
+    button.disabled=false;
+    button.textContent=original;
+  });
+
+  render();
+
+  // Live updates: everyone with the page open sees new/changed endorsements.
+  client.channel('endorsements-live')
+    .on('postgres_changes',
+      {event:'*',schema:'public',table:'endorsements'},
+      () => render()
+    )
+    .subscribe();
+})();
+</script>
+</body></html>
